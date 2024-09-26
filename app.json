@@ -1,0 +1,7 @@
+{
+  "name": "IslandEats",
+  "displayName": "IslandEats",
+  "packagerOpts": {
+    "config": "metro.config.js"
+  }
+}

@@ -1,0 +1,4 @@
+APP_CONFIG=development
+API_URL=http:/$()/localhost:5003/api/
+SOCKET_URL=http:/$()/localhost:5003
+MAPBOX_PUBLIC_KEY=pk.eyJ1Ijoicm9oZGV2MjQiLCJhIjoiY2x5bnNqendjMDl1eTJxczQzcWd5dThtOSJ9.jSHGrRek4QdUWgSvQWY0_g

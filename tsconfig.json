@@ -1,0 +1,66 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@pages": [
+        "src/pages"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@styles": [
+        "src/styles"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@icons/*": [
+        "src/assets/icons/*"
+      ],
+      "@images/*": [
+        "src/assets/images/*"
+      ],
+      "@placeholders/*": [
+        "src/assets/images/placeholders/*"
+      ],
+      "@interfaces": [
+        "src/interfaces"
+      ],
+      "@constants/*": [
+        "src/constants/*"
+      ],
+      "@contexts/*": [
+        "src/contexts/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
+      "@navigation": [
+        "src/navigation"
+      ],
+      "@navigation/*": [
+        "src/navigation/*"
+      ],
+      "@actions/*": [
+        "src/actions/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@helpers": [
+        "src/helpers"
+      ],
+      "@helpers/*": [
+        "src/helpers/*"
+      ]
+    },
+  },
+
+}
