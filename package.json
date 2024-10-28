@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios --verbose",
+    "fix-ios": "RCT_NEW_ARCH_ENABLED=1; rm -rf node_modules ; rm -rf ~/Library/Developer/Xcode/DerivedData ; cd ios ; rm Podfile.lock; pod deintegrate; rm -rf Pods ; cd .. ; npm install ; cd ios ; pod install ; cd .. ; npm run watchman",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "watchman": "watchman watch-del './' ; watchman watch-project './'"
   },
   "dependencies": {
     "react": "18.3.1",
