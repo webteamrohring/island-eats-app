@@ -2,10 +2,10 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import EarningsStackScreen from './EarningStackNavigator';
 import OrdersStackScreen from './OrderStackNavigator';
+import MessageStackScreen from './MessageStackNavigator';
+import AccountStackScreen from './AccountStackNavigator';
+import HomeStackScreen from './HomeStackNavigator';
 import uiColors from '@utils/colors';
-import Account from '@views/Account/Account';
-import Message from '@views/Message/Message';
-import Home from '@views/Home/Home';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Tab = createBottomTabNavigator();
@@ -37,7 +37,11 @@ const BottomTabNavigator = () => {
           return <Icon name={iconName} size={size} color={color} />;
         },
       })}>
-      <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen
+        name="HomeStackGroup"
+        component={HomeStackScreen}
+        options={{tabBarLabel: 'Home'}}
+      />
       <Tab.Screen
         name="OrdersStackGroup"
         component={OrdersStackScreen}
@@ -48,8 +52,16 @@ const BottomTabNavigator = () => {
         component={EarningsStackScreen}
         options={{tabBarLabel: 'Earnings'}}
       />
-      <Tab.Screen name="Message" component={Message} />
-      <Tab.Screen name="Account" component={Account} />
+      <Tab.Screen
+        name="MessageStackGroup"
+        component={MessageStackScreen}
+        options={{tabBarLabel: 'Message'}}
+      />
+      <Tab.Screen
+        name="AccountStackGroup"
+        component={AccountStackScreen}
+        options={{tabBarLabel: 'Account'}}
+      />
     </Tab.Navigator>
   );
 };
