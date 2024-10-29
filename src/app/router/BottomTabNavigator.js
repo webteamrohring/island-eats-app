@@ -2,6 +2,7 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import EarningsStackScreen from './EarningStackNavigator';
 import OrdersStackScreen from './OrderStackNavigator';
+import uiColors from '@utils/colors';
 import Account from '@views/Account/Account';
 import Message from '@views/Message/Message';
 import Home from '@views/Home/Home';
@@ -15,9 +16,9 @@ const BottomTabNavigator = () => {
       screenOptions={({route}) => ({
         headerShown: false,
         tabBarStyle: {
-          backgroundColor: '#141414',
+          backgroundColor: uiColors.black.light,
         },
-        tabBarActiveTintColor: 'rgba(6, 193, 103, 1)',
+        tabBarActiveTintColor: uiColors.green.normal,
         tabBarIcon: ({color, size}) => {
           let iconName;
 
