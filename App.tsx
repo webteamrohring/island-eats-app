@@ -1,3 +1,4 @@
+import React from 'react';
 import 'react-native-gesture-handler';
 // import Navigation from './src/app/router/router';
 import { NavigationContainer } from '@react-navigation/native';

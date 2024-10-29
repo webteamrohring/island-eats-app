@@ -1,11 +1,25 @@
-import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import React, { useEffect } from 'react';
+import { View, StyleSheet, Image } from 'react-native';
 import uiColors from '@utils/colors';
+import Logo from '@assets/images/TransparentWhiteLogo.png';
+import { useNavigation } from '@react-navigation/native';
 
 const SplashScreen = () => {
+
+  const navigation = useNavigation();
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigation.navigate('BottomTabNavigator');
+    }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [navigation]);
+
   return(
     <View style={s.container}>
-      <Text>Splash screen</Text>
+      <Image source={Logo}/>
     </View>
   );
 };
