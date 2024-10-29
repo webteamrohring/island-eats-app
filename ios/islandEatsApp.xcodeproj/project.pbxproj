@@ -12,9 +12,9 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		46B9BB3CDACF85CB669F0FB7 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
-		528AF2CC0FB3CD4E45C87A79 /* libPods-islandEatsApp-islandEatsAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5852D0E808DDA981884BF6ED /* libPods-islandEatsApp-islandEatsAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		9EC4DC533D25D4E6E5841193 /* libPods-islandEatsApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 019D68F855F953C0780CFA1A /* libPods-islandEatsApp.a */; };
+		82DC85257D07A23430EFB9B9 /* libPods-islandEatsApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 783C70D34E7C79116BF757D3 /* libPods-islandEatsApp.a */; };
+		C48A071B622757555EBD02C9 /* libPods-islandEatsApp-islandEatsAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1AFA2A3BA057E1F77C0EF0 /* libPods-islandEatsApp-islandEatsAppTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,7 @@
 		00E356EE1AD99517003FC87E /* islandEatsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = islandEatsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* islandEatsAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = islandEatsAppTests.m; sourceTree = "<group>"; };
-		019D68F855F953C0780CFA1A /* libPods-islandEatsApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-islandEatsApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03C36B3C491396ADD36E9319 /* Pods-islandEatsApp-islandEatsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-islandEatsApp-islandEatsAppTests.release.xcconfig"; path = "Target Support Files/Pods-islandEatsApp-islandEatsAppTests/Pods-islandEatsApp-islandEatsAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* islandEatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = islandEatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = islandEatsApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = islandEatsApp/AppDelegate.mm; sourceTree = "<group>"; };
@@ -39,13 +39,13 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = islandEatsApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = islandEatsApp/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = islandEatsApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		5852D0E808DDA981884BF6ED /* libPods-islandEatsApp-islandEatsAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-islandEatsApp-islandEatsAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		783C70D34E7C79116BF757D3 /* libPods-islandEatsApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-islandEatsApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E1AFA2A3BA057E1F77C0EF0 /* libPods-islandEatsApp-islandEatsAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-islandEatsApp-islandEatsAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = islandEatsApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AC5858B2006801C583944917 /* Pods-islandEatsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-islandEatsApp.debug.xcconfig"; path = "Target Support Files/Pods-islandEatsApp/Pods-islandEatsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		874BD9B305391C7E1BD42BC7 /* Pods-islandEatsApp-islandEatsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-islandEatsApp-islandEatsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-islandEatsApp-islandEatsAppTests/Pods-islandEatsApp-islandEatsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4E2F2F457F3AC1FB4F4E8BE /* Pods-islandEatsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-islandEatsApp.debug.xcconfig"; path = "Target Support Files/Pods-islandEatsApp/Pods-islandEatsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DD47AB90F73940DF96B7AC3A /* Pods-islandEatsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-islandEatsApp.release.xcconfig"; path = "Target Support Files/Pods-islandEatsApp/Pods-islandEatsApp.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		EFD2C97195B8AF18E1D80047 /* Pods-islandEatsApp-islandEatsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-islandEatsApp-islandEatsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-islandEatsApp-islandEatsAppTests/Pods-islandEatsApp-islandEatsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F8D42986DD00C3CECC6A3F8F /* Pods-islandEatsApp-islandEatsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-islandEatsApp-islandEatsAppTests.release.xcconfig"; path = "Target Support Files/Pods-islandEatsApp-islandEatsAppTests/Pods-islandEatsApp-islandEatsAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		FA1C70159443C843478462E7 /* Pods-islandEatsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-islandEatsApp.release.xcconfig"; path = "Target Support Files/Pods-islandEatsApp/Pods-islandEatsApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				528AF2CC0FB3CD4E45C87A79 /* libPods-islandEatsApp-islandEatsAppTests.a in Frameworks */,
+				C48A071B622757555EBD02C9 /* libPods-islandEatsApp-islandEatsAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EC4DC533D25D4E6E5841193 /* libPods-islandEatsApp.a in Frameworks */,
+				82DC85257D07A23430EFB9B9 /* libPods-islandEatsApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,8 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				019D68F855F953C0780CFA1A /* libPods-islandEatsApp.a */,
-				5852D0E808DDA981884BF6ED /* libPods-islandEatsApp-islandEatsAppTests.a */,
+				783C70D34E7C79116BF757D3 /* libPods-islandEatsApp.a */,
+				7E1AFA2A3BA057E1F77C0EF0 /* libPods-islandEatsApp-islandEatsAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,10 +143,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AC5858B2006801C583944917 /* Pods-islandEatsApp.debug.xcconfig */,
-				FA1C70159443C843478462E7 /* Pods-islandEatsApp.release.xcconfig */,
-				EFD2C97195B8AF18E1D80047 /* Pods-islandEatsApp-islandEatsAppTests.debug.xcconfig */,
-				F8D42986DD00C3CECC6A3F8F /* Pods-islandEatsApp-islandEatsAppTests.release.xcconfig */,
+				D4E2F2F457F3AC1FB4F4E8BE /* Pods-islandEatsApp.debug.xcconfig */,
+				DD47AB90F73940DF96B7AC3A /* Pods-islandEatsApp.release.xcconfig */,
+				874BD9B305391C7E1BD42BC7 /* Pods-islandEatsApp-islandEatsAppTests.debug.xcconfig */,
+				03C36B3C491396ADD36E9319 /* Pods-islandEatsApp-islandEatsAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -158,12 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "islandEatsAppTests" */;
 			buildPhases = (
-				12B3B44547EEFDBA9D125678 /* [CP] Check Pods Manifest.lock */,
+				FC1103855876F495987D6949 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				038B9F2A7F4B594C3CB61573 /* [CP] Embed Pods Frameworks */,
-				AF7EB57DE83248DA229D9906 /* [CP] Copy Pods Resources */,
+				41CBCA10D2BAAD189717A572 /* [CP] Embed Pods Frameworks */,
+				41AF926EB4E20EB6532FAB5C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,13 +179,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "islandEatsApp" */;
 			buildPhases = (
-				A5B9C281A482883CB44C9AFA /* [CP] Check Pods Manifest.lock */,
+				219F596CBA12401C8A68033C /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				4FA910577C283C7AFF9FA19A /* [CP] Embed Pods Frameworks */,
-				CE61C99F8DA45E26F5F90291 /* [CP] Copy Pods Resources */,
+				46CF9DF8BBB6ED1FD2806369 /* [CP] Embed Pods Frameworks */,
+				1B7CFA89A35F5EB15F6A6D6E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,63 +269,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		038B9F2A7F4B594C3CB61573 /* [CP] Embed Pods Frameworks */ = {
+		1B7CFA89A35F5EB15F6A6D6E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp-islandEatsAppTests/Pods-islandEatsApp-islandEatsAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp/Pods-islandEatsApp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp-islandEatsAppTests/Pods-islandEatsApp-islandEatsAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp/Pods-islandEatsApp-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp-islandEatsAppTests/Pods-islandEatsApp-islandEatsAppTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp/Pods-islandEatsApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		12B3B44547EEFDBA9D125678 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-islandEatsApp-islandEatsAppTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4FA910577C283C7AFF9FA19A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp/Pods-islandEatsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp/Pods-islandEatsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp/Pods-islandEatsApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A5B9C281A482883CB44C9AFA /* [CP] Check Pods Manifest.lock */ = {
+		219F596CBA12401C8A68033C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -347,7 +308,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AF7EB57DE83248DA229D9906 /* [CP] Copy Pods Resources */ = {
+		41AF926EB4E20EB6532FAB5C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -364,21 +325,60 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp-islandEatsAppTests/Pods-islandEatsApp-islandEatsAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CE61C99F8DA45E26F5F90291 /* [CP] Copy Pods Resources */ = {
+		41CBCA10D2BAAD189717A572 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp/Pods-islandEatsApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp-islandEatsAppTests/Pods-islandEatsApp-islandEatsAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp/Pods-islandEatsApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp-islandEatsAppTests/Pods-islandEatsApp-islandEatsAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp/Pods-islandEatsApp-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp-islandEatsAppTests/Pods-islandEatsApp-islandEatsAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46CF9DF8BBB6ED1FD2806369 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp/Pods-islandEatsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp/Pods-islandEatsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-islandEatsApp/Pods-islandEatsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC1103855876F495987D6949 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-islandEatsApp-islandEatsAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -414,7 +414,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFD2C97195B8AF18E1D80047 /* Pods-islandEatsApp-islandEatsAppTests.debug.xcconfig */;
+			baseConfigurationReference = 874BD9B305391C7E1BD42BC7 /* Pods-islandEatsApp-islandEatsAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -441,7 +441,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8D42986DD00C3CECC6A3F8F /* Pods-islandEatsApp-islandEatsAppTests.release.xcconfig */;
+			baseConfigurationReference = 03C36B3C491396ADD36E9319 /* Pods-islandEatsApp-islandEatsAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -465,7 +465,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC5858B2006801C583944917 /* Pods-islandEatsApp.debug.xcconfig */;
+			baseConfigurationReference = D4E2F2F457F3AC1FB4F4E8BE /* Pods-islandEatsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -493,7 +493,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA1C70159443C843478462E7 /* Pods-islandEatsApp.release.xcconfig */;
+			baseConfigurationReference = DD47AB90F73940DF96B7AC3A /* Pods-islandEatsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
