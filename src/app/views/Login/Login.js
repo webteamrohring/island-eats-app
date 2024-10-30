@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dimensions, Image, SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { Dimensions, Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import uiColors from '@utils/colors';
 import Logo from '@assets/images/TransparentWhiteLogo.png';
 import Input from '@components/Inputs/Input';
@@ -7,9 +7,9 @@ import Buttons from '@components/Buttons/Buttons';
 import Checkbox from '@components/Checkbox/Checkbox';
 
 const { width } = Dimensions.get('screen');
-console.log('🚀 ~ width:', width);
 
 const Login = () => {
+
   return (
     <SafeAreaView style={s.container}>
       <View style={s.innerContainer}>
@@ -22,6 +22,9 @@ const Login = () => {
           <Text style={s.text}>Remember me</Text>
         </View>
         <Buttons text="Login" />
+        <TouchableOpacity activeOpacity={0.6}>
+          <Text style={s.text}>Forgot password?</Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
@@ -43,7 +46,7 @@ const s = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
     padding: 18,
-    // gap: 8,
+    gap: 24,
   },
   header: {
     color: uiColors.white.normal,
@@ -54,7 +57,7 @@ const s = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    paddingVertical: 16,
+    // paddingVertical: 16,
     gap: 8,
   },
   text: {
