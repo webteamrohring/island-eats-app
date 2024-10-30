@@ -1,5 +1,5 @@
 import React from 'react';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import EarningsStackScreen from './EarningStackNavigator';
 import OrdersStackScreen from './OrderStackNavigator';
 import MessageStackScreen from './MessageStackNavigator';
@@ -13,13 +13,13 @@ const Tab = createBottomTabNavigator();
 const BottomTabNavigator = () => {
   return (
     <Tab.Navigator
-      screenOptions={({route}) => ({
+      screenOptions={({ route }) => ({
         headerShown: false,
         tabBarStyle: {
           backgroundColor: uiColors.black.light,
         },
         tabBarActiveTintColor: uiColors.green.normal,
-        tabBarIcon: ({color, size}) => {
+        tabBarIcon: ({ color, size }) => {
           let iconName;
 
           if (route.name === 'HomeStackGroup') {
@@ -40,27 +40,27 @@ const BottomTabNavigator = () => {
       <Tab.Screen
         name="HomeStackGroup"
         component={HomeStackScreen}
-        options={{tabBarLabel: 'Home'}}
+        options={{ tabBarLabel: 'Home' }}
       />
       <Tab.Screen
         name="OrdersStackGroup"
         component={OrdersStackScreen}
-        options={{tabBarLabel: 'Orders'}}
+        options={{ tabBarLabel: 'Orders' }}
       />
       <Tab.Screen
         name="EarningsStackGroup"
         component={EarningsStackScreen}
-        options={{tabBarLabel: 'Earnings'}}
+        options={{ tabBarLabel: 'Earnings' }}
       />
       <Tab.Screen
         name="MessageStackGroup"
         component={MessageStackScreen}
-        options={{tabBarLabel: 'Message'}}
+        options={{ tabBarLabel: 'Message' }}
       />
       <Tab.Screen
         name="AccountStackGroup"
         component={AccountStackScreen}
-        options={{tabBarLabel: 'Account'}}
+        options={{ tabBarLabel: 'Account' }}
       />
     </Tab.Navigator>
   );
