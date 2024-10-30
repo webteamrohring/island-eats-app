@@ -22,15 +22,15 @@ const BottomTabNavigator = () => {
         tabBarIcon: ({color, size}) => {
           let iconName;
 
-          if (route.name === 'Home') {
+          if (route.name === 'HomeStackGroup') {
             iconName = 'home';
           } else if (route.name === 'OrdersStackGroup') {
             iconName = 'shopping-cart';
           } else if (route.name === 'EarningsStackGroup') {
             iconName = 'dollar';
-          } else if (route.name === 'Message') {
+          } else if (route.name === 'MessageStackGroup') {
             iconName = 'envelope';
-          } else if (route.name === 'Account') {
+          } else if (route.name === 'AccountStackGroup') {
             iconName = 'user';
           }
 
