@@ -5,18 +5,20 @@ import Logo from '@assets/images/TransparentWhiteLogo.png';
 import Input from '@components/Inputs/Input';
 import Buttons from '@components/Buttons/Buttons';
 import Checkbox from '@components/Checkbox/Checkbox';
+import useMethod from './method';
 
 const { width } = Dimensions.get('screen');
 
 const Login = () => {
+  const { login, handleChange } = useMethod();
 
   return (
     <SafeAreaView style={s.container}>
       <View style={s.innerContainer}>
         <Image source={Logo} />
         <Text style={s.header}>Welcome Rider!</Text>
-        <Input label="Email" />
-        <Input label="Password" isPassword />
+        <Input label="Email" value={login.email} fieldName="email" callback={(value) => handleChange(value, 'email')} />
+        <Input label="Password" value={login.password} fieldName={'password'} callback={(value) => handleChange(value, 'password')} isPassword />
         <View style={s.rememberContainer}>
           <Checkbox />
           <Text style={s.text}>Remember me</Text>
