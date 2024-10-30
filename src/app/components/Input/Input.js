@@ -1,19 +1,34 @@
 import uiColors from '@utils/colors';
-import React from 'react';
-import { Dimensions, StyleSheet, Text, TextInput, View } from 'react-native';
+import React, { useState } from 'react';
+import { Dimensions, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+
 
 const { width } = Dimensions.get('screen');
 
-const Input = ({ label }) => {
+const Input = ({ label, isPassword = false, callback }) => {
+  const [isFocused, setIsFocused] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+
   return (
     <View style={s.container}>
       <Text style={s.label}>{label}</Text>
-      <TextInput
-        style={s.input}
-        keyboardType="email-address"
-        autoCapitalize="none"
-        selectionColor={uiColors.green.normal}
-      />
+      <View style={[s.inputContainer, isFocused && s.inputFocused]}>
+        <TextInput
+          style={s.input}
+          keyboardType="email-address"
+          autoCapitalize="none"
+          selectionColor={uiColors.green.normal}
+          secureTextEntry={!isVisible}
+          onFocus={() => setIsFocused(true)}
+          onBlur={() => setIsFocused(false)}
+        />
+        {isPassword && (
+          <TouchableOpacity style={s.icon} onPress={() => setIsVisible(!isVisible)}>
+            <Icon name={isVisible ? 'visibility' : 'visibility-off'} size={24} color={uiColors.green.normal} />
+          </TouchableOpacity>
+        )}
+      </View>
     </View>
   );
 };
@@ -31,14 +46,26 @@ const s = StyleSheet.create({
   label: {
     color: uiColors.white.dark,
   },
-  input: {
-    width: '100%',
+  inputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
     height: 48,
-    padding: 16,
+    width: '100%',
+    padding: 8,
+    gap: 8,
     borderRadius: 8,
     borderWidth: 1,
     borderColor: uiColors.white.darkActive,
     backgroundColor: uiColors.white.darker,
+  },
+  input: {
+    width: '90%',
     color: uiColors.white.normal,
+  },
+  inputFocused: {
+    borderColor: uiColors.green.normal,
+  },
+  icon: {
+    width: '10%',
   },
 });
