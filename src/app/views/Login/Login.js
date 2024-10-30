@@ -13,7 +13,8 @@ const Login = () => {
       <View style={s.innerContainer}>
         <Image source={Logo} />
         <Text style={s.header}>Welcome Rider!</Text>
-        <Input label="Email" />
+        <Input label="Email" callback={() => { }} />
+        <Input label="Password" isPassword callback={() => { }} />
       </View>
     </SafeAreaView>
   );
