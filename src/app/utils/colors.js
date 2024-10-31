@@ -18,6 +18,7 @@ export const uiColors = {
     normal: '#000000',
     normalHover: '#000000',
     normalActive: '#000000',
+    semiDark: '#242528',
     dark: '#000000',
     darkHover: '#000000',
     darkActive: '#000000',

@@ -1,11 +1,12 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {StyleSheet} from 'react-native';
+import {uiColors} from '@utils/colors';
 import EarningsStackScreen from './EarningStackNavigator';
 import OrdersStackScreen from './OrderStackNavigator';
 import MessageStackScreen from './MessageStackNavigator';
 import AccountStackScreen from './AccountStackNavigator';
 import HomeStackScreen from './HomeStackNavigator';
-import {uiColors} from '@utils/colors';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Tab = createBottomTabNavigator();
@@ -15,11 +16,12 @@ const BottomTabNavigator = () => {
     <Tab.Navigator
       screenOptions={({route}) => ({
         headerShown: false,
-        tabBarStyle: {
-          backgroundColor: uiColors.black.light,
-        },
+        tabBarStyle: s.tabBar,
+        tabBarLabelStyle: s.tabBarLabel,
         tabBarActiveTintColor: uiColors.green.normal,
-        tabBarIcon: ({color, size}) => {
+        tabBarLabelPosition: 'below-icon',
+
+        tabBarIcon: ({color}) => {
           let iconName;
 
           if (route.name === 'HomeStackGroup') {
@@ -34,7 +36,7 @@ const BottomTabNavigator = () => {
             iconName = 'user';
           }
 
-          return <Icon name={iconName} size={size} color={color} />;
+          return <Icon name={iconName} size={24} color={color} />;
         },
       })}>
       <Tab.Screen
@@ -65,5 +67,19 @@ const BottomTabNavigator = () => {
     </Tab.Navigator>
   );
 };
+
+const s = StyleSheet.create({
+  tabBar: {
+    height: 80,
+    backgroundColor: uiColors.black.light,
+    paddingBottom: 10,
+    borderTopWidth: 0,
+  },
+
+  tabBarLabel: {
+    fontSize: 12,
+    paddingBottom: 5,
+  },
+});
 
 export default BottomTabNavigator;

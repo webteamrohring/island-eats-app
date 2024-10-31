@@ -1,10 +1,8 @@
 import {useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
-import {useIsland} from '@context/Provider';
 
 const useMethod = () => {
   const navigation = useNavigation();
-  // const {themeState} = useIsland();
   const [login, setLogin] = useState({email: '', password: ''});
   console.log('🚀 ~ useMethod ~ login:', login);
 
