@@ -18,7 +18,7 @@ import useMethod from './method';
 const {width} = Dimensions.get('screen');
 
 const Login = () => {
-  const {login, handleChange} = useMethod();
+  const {login, handleLogIn, handleChange} = useMethod();
 
   return (
     <SafeAreaView style={s.container}>
@@ -42,7 +42,7 @@ const Login = () => {
           <Checkbox />
           <Text style={s.text}>Remember me</Text>
         </View>
-        <Buttons text="Login" />
+        <Buttons text="Login" callback={() => handleLogIn()} />
         <TouchableOpacity activeOpacity={0.6}>
           <Text style={s.text}>Forgot password?</Text>
         </TouchableOpacity>
