@@ -17,41 +17,34 @@ import useMethod from './method';
 
 const { width } = Dimensions.get('screen');
 
-const Login = () => {
-  const { login, handleChange, handleLogIn, navigation } = useMethod();
+const ResetPassword = () => {
+  const { resetPassword, handleChangePassword, navigation } = useMethod();
 
   return (
     <SafeAreaView style={s.container}>
       <View style={s.innerContainer}>
         <Image source={Logo} />
-        <Text style={s.header}>Welcome Rider!</Text>
+        <Text style={s.header}>Reset Your Password</Text>
+        <Text style={s.text}>Please enter your new password below.</Text>
         <Input
-          label="Email"
-          value={login.email}
-          fieldName="email"
-          callback={value => handleChange(value, 'email')}
-        />
-        <Input
-          label="Password"
-          value={login.password}
-          fieldName={'password'}
-          callback={value => handleChange(value, 'password')}
+          label="New Password"
+          value={resetPassword.new}
+          callback={value => handleChangePassword(value, 'new')}
           isPassword
         />
-        <View style={s.rememberContainer}>
-          <Checkbox />
-          <Text style={s.text}>Remember me</Text>
-        </View>
-        <Buttons text="Login" callback={handleLogIn} />
-        <TouchableOpacity activeOpacity={0.6} onPress={() => navigation.navigate('ForgotPassword')}>
-          <Text style={s.text}>Forgot password?</Text>
-        </TouchableOpacity>
+        <Input
+          label="Confirm Password"
+          value={resetPassword.password}
+          callback={value => handleChangePassword(value, 'confirm')}
+          isPassword
+        />
+        <Buttons text="Update Password" callback={() => { }} />
       </View>
     </SafeAreaView>
   );
 };
 
-export default Login;
+export default ResetPassword;
 
 const s = StyleSheet.create({
   container: {
@@ -84,6 +77,7 @@ const s = StyleSheet.create({
   text: {
     fontSize: 14,
     fontWeight: '400',
-    color: uiColors.white.normal,
+    textAlign: 'center',
+    color: uiColors.white.darkHover,
   },
 });

@@ -1,5 +1,5 @@
-import {uiColors} from '@utils/colors';
-import React, {useState} from 'react';
+import { uiColors } from '@utils/colors';
+import React, { useState } from 'react';
 import {
   Dimensions,
   StyleSheet,
@@ -10,11 +10,11 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-const {width} = Dimensions.get('screen');
+const { width } = Dimensions.get('screen');
 
 const Input = props => {
   const [isFocused, setIsFocused] = useState(false);
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   const handleChangeText = value => {
     props.callback(value);
