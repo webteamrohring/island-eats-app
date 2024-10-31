@@ -32,7 +32,7 @@ const s = StyleSheet.create({
   },
   earningsText: {
     fontSize: 32,
-    fontWeight: 'bold',
+    fontWeight: '500',
     color: '#FFFFFF',
   },
   subText: {
