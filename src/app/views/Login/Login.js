@@ -1,5 +1,13 @@
 import React from 'react';
-import { Dimensions, Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {
+  Dimensions,
+  Image,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import uiColors from '@utils/colors';
 import Logo from '@assets/images/TransparentWhiteLogo.png';
 import Input from '@components/Inputs/Input';
@@ -17,8 +25,19 @@ const Login = () => {
       <View style={s.innerContainer}>
         <Image source={Logo} />
         <Text style={s.header}>Welcome Rider!</Text>
-        <Input label="Email" value={login.email} fieldName="email" callback={(value) => handleChange(value, 'email')} />
-        <Input label="Password" value={login.password} fieldName={'password'} callback={(value) => handleChange(value, 'password')} isPassword />
+        <Input
+          label="Email"
+          value={login.email}
+          fieldName="email"
+          callback={value => handleChange(value, 'email')}
+        />
+        <Input
+          label="Password"
+          value={login.password}
+          fieldName={'password'}
+          callback={value => handleChange(value, 'password')}
+          isPassword
+        />
         <View style={s.rememberContainer}>
           <Checkbox />
           <Text style={s.text}>Remember me</Text>
@@ -64,8 +83,7 @@ const s = StyleSheet.create({
   },
   text: {
     fontSize: 14,
-    fontWeight: 400,
+    fontWeight: '400',
     color: uiColors.white.normal,
   },
-
 });

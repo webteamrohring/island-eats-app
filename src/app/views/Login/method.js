@@ -11,8 +11,13 @@ const useMethod = () => {
     });
   };
 
+  const handleLogIn = () => {
+    navigation.navigate('BottomTabNavigator');
+  };
+
   return {
     login,
+    handleLogIn,
     handleChange,
     navigation,
   };
