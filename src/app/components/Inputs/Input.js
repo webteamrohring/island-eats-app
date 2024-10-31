@@ -1,16 +1,22 @@
-import uiColors from '@utils/colors';
-import React, { useState } from 'react';
-import { Dimensions, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import {uiColors} from '@utils/colors';
+import React, {useState} from 'react';
+import {
+  Dimensions,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
+const {width} = Dimensions.get('screen');
 
-const { width } = Dimensions.get('screen');
-
-const Input = (props) => {
+const Input = props => {
   const [isFocused, setIsFocused] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
 
-  const handleChangeText = (value) => {
+  const handleChangeText = value => {
     props.callback(value);
   };
 
@@ -30,8 +36,14 @@ const Input = (props) => {
           onChangeText={handleChangeText}
         />
         {props.isPassword && (
-          <TouchableOpacity style={s.icon} onPress={() => setIsVisible(!isVisible)}>
-            <Icon name={isVisible ? 'visibility' : 'visibility-off'} size={24} color={uiColors.green.normal} />
+          <TouchableOpacity
+            style={s.icon}
+            onPress={() => setIsVisible(!isVisible)}>
+            <Icon
+              name={isVisible ? 'visibility' : 'visibility-off'}
+              size={24}
+              color={uiColors.green.normal}
+            />
           </TouchableOpacity>
         )}
       </View>

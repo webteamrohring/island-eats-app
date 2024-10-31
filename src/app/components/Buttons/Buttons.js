@@ -1,4 +1,4 @@
-import uiColors from '@utils/colors';
+import {uiColors} from '@utils/colors';
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity} from 'react-native';
 
