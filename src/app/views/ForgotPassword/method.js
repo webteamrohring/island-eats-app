@@ -1,10 +1,9 @@
-import { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
+import { useState } from 'react';
 
 const useMethod = () => {
   const navigation = useNavigation();
   const [login, setLogin] = useState({ email: '', password: '' });
-  console.log('🚀 ~ useMethod ~ login:', login);
 
   const handleChange = (value, fieldName) => {
     setLogin(prev => {
@@ -12,13 +11,13 @@ const useMethod = () => {
     });
   };
 
-  const handleLogIn = () => {
-    navigation.navigate('BottomTabNavigator');
+  const handleSendLink = () => {
+    navigation.navigate('LinkSent');
   };
 
   return {
     login,
-    handleLogIn,
+    handleSendLink,
     handleChange,
     navigation,
   };

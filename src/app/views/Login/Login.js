@@ -8,17 +8,17 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {uiColors} from '@utils/colors';
+import { uiColors } from '@utils/colors';
 import Logo from '@assets/images/TransparentWhiteLogo.png';
 import Input from '@components/Inputs/Input';
 import Buttons from '@components/Buttons/Buttons';
 import Checkbox from '@components/Checkbox/Checkbox';
 import useMethod from './method';
 
-const {width} = Dimensions.get('screen');
+const { width } = Dimensions.get('screen');
 
 const Login = () => {
-  const {login, handleLogIn, handleChange} = useMethod();
+  const { login, handleChange, handleLogIn, navigation } = useMethod();
 
   return (
     <SafeAreaView style={s.container}>
@@ -42,8 +42,8 @@ const Login = () => {
           <Checkbox />
           <Text style={s.text}>Remember me</Text>
         </View>
-        <Buttons text="Login" callback={() => handleLogIn()} />
-        <TouchableOpacity activeOpacity={0.6}>
+        <Buttons text="Login" callback={handleLogIn} />
+        <TouchableOpacity activeOpacity={0.6} onPress={() => navigation.navigate('ForgotPassword')}>
           <Text style={s.text}>Forgot password?</Text>
         </TouchableOpacity>
       </View>
