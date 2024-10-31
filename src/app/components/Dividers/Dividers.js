@@ -1,18 +1,18 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
+import {uiColors} from '@utils/colors';
 
 const Divider = ({
-  color = '#BDBDBD',
+  color = uiColors.white.darker,
   thickness = StyleSheet.hairlineWidth,
   width = '100%',
-  marginVertical = 10,
   style,
 }) => {
   return (
     <View
       style={[
         styles.divider,
-        {backgroundColor: color, height: thickness, width, marginVertical},
+        {backgroundColor: color, height: thickness, width},
         style,
       ]}
     />
