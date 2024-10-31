@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import uiColors from '@utils/colors';
+import {uiColors} from '@utils/colors';
 import Logo from '@assets/images/TransparentWhiteLogo.png';
 import Input from '@components/Inputs/Input';
 import Buttons from '@components/Buttons/Buttons';

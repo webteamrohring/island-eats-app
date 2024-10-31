@@ -1,8 +1,12 @@
-import React, {useEffect, useReducer, useContext} from 'react';
+import React, {useReducer, useContext} from 'react';
 import {IslandDispatchContext, IslandContext} from './Context';
+import {userReducer, initialUser} from './reducer/UserReducer';
+import {themeReducer, initialTheme} from './reducer/ThemeReducer';
+import {DISPATCH_TYPE} from '@utils/constants/contextConstants';
 
 export function IslandProvider({children}) {
   const [userState, userDispatch] = useReducer(userReducer, initialUser);
+  const [themeState, themeDispatch] = useReducer(themeReducer, initialTheme);
 
   const {USER} = DISPATCH_TYPE;
 
@@ -11,13 +15,15 @@ export function IslandProvider({children}) {
     switch (dispatchType) {
       case USER:
         return userDispatch(action);
+      case THEME:
+        return themeDispatch(action);
       default:
         console.error(`Unknown dispatch type: ${dispatchType}`);
     }
   };
 
   return (
-    <IslandContext.Provider value={{userState}}>
+    <IslandContext.Provider value={{userState, themeState}}>
       <IslandDispatchContext.Provider value={dispatch}>
         {children}
       </IslandDispatchContext.Provider>
