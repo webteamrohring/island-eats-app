@@ -4,9 +4,15 @@ import { useState } from 'react';
 const useMethod = () => {
   const navigation = useNavigation();
   const [login, setLogin] = useState({ email: '', password: '' });
+  const [resetPassword, setResetPassword] = useState({ new: '', confirm: '' });
 
   const handleChange = (value, fieldName) => {
     setLogin(prev => {
+      return { ...prev, [fieldName]: value };
+    });
+  };
+  const handleChangePassword = (value, fieldName) => {
+    setResetPassword(prev => {
       return { ...prev, [fieldName]: value };
     });
   };
@@ -17,8 +23,10 @@ const useMethod = () => {
 
   return {
     login,
+    resetPassword,
     handleSendLink,
     handleChange,
+    handleChangePassword,
     navigation,
   };
 };

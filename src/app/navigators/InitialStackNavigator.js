@@ -3,6 +3,8 @@ import React from 'react';
 import SplashScreen from '../views/SplashScreen';
 import Login from '@views/Login/Login';
 import ForgotPassword from '@views/ForgotPassword/ForgotPassword';
+import LinkSent from '@views/ForgotPassword/LinkSent';
+import ResetPassword from '@views/ForgotPassword/ResetPassword';
 
 const Stack = createNativeStackNavigator();
 
@@ -12,6 +14,8 @@ const InitialStackNavigator = () => {
       <Stack.Screen name="SplashScreen" component={SplashScreen} />
       <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
+      <Stack.Screen name="LinkSent" component={LinkSent} />
+      <Stack.Screen name="ResetPassword" component={ResetPassword} />
     </Stack.Navigator>
   );
 };
