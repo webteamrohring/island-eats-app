@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
-import { View, StyleSheet, Image } from 'react-native';
-import uiColors from '@utils/colors';
+import React, {useEffect} from 'react';
+import {View, StyleSheet, Image} from 'react-native';
+import {uiColors} from '@utils/colors';
 import Logo from '@assets/images/TransparentWhiteLogo.png';
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 
 const SplashScreen = () => {
-
   const navigation = useNavigation();
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -17,9 +16,9 @@ const SplashScreen = () => {
     };
   }, [navigation]);
 
-  return(
+  return (
     <View style={s.container}>
-      <Image source={Logo}/>
+      <Image source={Logo} />
     </View>
   );
 };

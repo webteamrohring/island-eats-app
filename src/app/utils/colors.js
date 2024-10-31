@@ -1,4 +1,4 @@
-const uiColors = {
+export const uiColors = {
   white: {
     light: '#ffffff',
     lightHover: '#ffffff',
@@ -73,4 +73,12 @@ const uiColors = {
   },
 };
 
-export default uiColors;
+export const LIGHT_THEME = {
+  background: '#FFFFFF',
+  text: '#000000',
+};
+
+export const DARK_THEME = {
+  background: '#000000',
+  text: '#FFFFFF',
+};

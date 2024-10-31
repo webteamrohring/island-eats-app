@@ -5,7 +5,7 @@ import OrdersStackScreen from './OrderStackNavigator';
 import MessageStackScreen from './MessageStackNavigator';
 import AccountStackScreen from './AccountStackNavigator';
 import HomeStackScreen from './HomeStackNavigator';
-import uiColors from '@utils/colors';
+import {uiColors} from '@utils/colors';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Tab = createBottomTabNavigator();

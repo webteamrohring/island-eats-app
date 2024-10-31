@@ -1,10 +1,10 @@
-import uiColors from '@utils/colors';
-import React, { useState } from 'react';
-import { StyleSheet, TouchableOpacity } from 'react-native';
+import {uiColors} from '@utils/colors';
+import React, {useState} from 'react';
+import {StyleSheet, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Entypo';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-const Checkbox = ({ isCircular = false, callback = () => { } }) => {
+const Checkbox = ({isCircular = false, callback = () => {}}) => {
   const [isChecked, setIsChecked] = useState(false);
 
   const handlePress = () => {
@@ -12,17 +12,18 @@ const Checkbox = ({ isCircular = false, callback = () => { } }) => {
     callback();
   };
 
-  return (
-    isCircular ? (
-      <TouchableOpacity style={[s.circularContainer, isChecked && s.circularChecked]} onPress={handlePress}>
-        {isChecked && <Icon name="dot-single" size={16} style={s.circle} />}
-      </TouchableOpacity>
-
-    ) : (
-      <TouchableOpacity style={[s.container, isChecked && s.checked]} onPress={handlePress}>
-        {isChecked && <MaterialIcons name="done" size={16} />}
-      </TouchableOpacity>
-    )
+  return isCircular ? (
+    <TouchableOpacity
+      style={[s.circularContainer, isChecked && s.circularChecked]}
+      onPress={handlePress}>
+      {isChecked && <Icon name="dot-single" size={16} style={s.circle} />}
+    </TouchableOpacity>
+  ) : (
+    <TouchableOpacity
+      style={[s.container, isChecked && s.checked]}
+      onPress={handlePress}>
+      {isChecked && <MaterialIcons name="done" size={16} />}
+    </TouchableOpacity>
   );
 };
 

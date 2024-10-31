@@ -7,7 +7,7 @@
       "@assets/*": ["app/assets/*"],
       "@components/*": ["app/components/*"],
       "@context/*": ["app/context/*"],
-      "@routers/*": ["app/routers/*"],
+      "@navigators/*": ["app/navigators/*"],
       "@utils/*": ["app/utils/*"],
       "@views/*": ["app/views/*"],
     }

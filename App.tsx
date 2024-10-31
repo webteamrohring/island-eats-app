@@ -1,14 +1,17 @@
 import React from 'react';
 import 'react-native-gesture-handler';
 // import Navigation from './src/app/router/router';
-import { NavigationContainer } from '@react-navigation/native';
-import MainStackNavigator from './src/app/router/MainStackNavigator';
+import {IslandProvider} from './src/app/context/Provider';
+import {NavigationContainer} from '@react-navigation/native';
+import MainStackNavigator from './src/app/navigators/MainStackNavigator';
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <MainStackNavigator />
-    </NavigationContainer>
+    <IslandProvider>
+      <NavigationContainer>
+        <MainStackNavigator />
+      </NavigationContainer>
+    </IslandProvider>
   );
 };
 
