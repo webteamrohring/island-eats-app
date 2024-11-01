@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
+import { isValidEmail } from '@utils/helpers';
 
 const useMethod = () => {
   const navigation = useNavigation();
@@ -15,10 +16,21 @@ const useMethod = () => {
     navigation.navigate('BottomTabNavigator');
   };
 
+  const isButtonDisabled = (button) => {
+    if (button === 'login') {
+      if (isValidEmail(login.email) && login.password.length > 0) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+  };
+
   return {
     login,
     handleLogIn,
     handleChange,
+    isButtonDisabled,
     navigation,
   };
 };

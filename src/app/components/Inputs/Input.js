@@ -29,7 +29,7 @@ const Input = ({ callback, label, value, isPassword }) => {
           keyboardType="email-address"
           autoCapitalize="none"
           selectionColor={uiColors.green.normal}
-          secureTextEntry={!isVisible}
+          secureTextEntry={props.isPassword && !isVisible}
           value={value}
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
@@ -79,7 +79,10 @@ const s = StyleSheet.create({
   },
   input: {
     width: '90%',
+    // padding: 10,
+    height: 40, // Adjust height as needed
     color: uiColors.white.normal,
+    textAlignVertical: 'center',
   },
   inputFocused: {
     borderColor: uiColors.green.normal,

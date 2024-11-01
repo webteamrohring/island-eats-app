@@ -5,6 +5,7 @@ import Login from '@views/Login/Login';
 import ForgotPassword from '@views/ForgotPassword/ForgotPassword';
 import LinkSent from '@views/ForgotPassword/LinkSent';
 import ResetPassword from '@views/ForgotPassword/ResetPassword';
+import Updated from '@views/ForgotPassword/Updated';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,6 +17,7 @@ const InitialStackNavigator = () => {
       <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
       <Stack.Screen name="LinkSent" component={LinkSent} />
       <Stack.Screen name="ResetPassword" component={ResetPassword} />
+      <Stack.Screen name="Updated" component={Updated} />
     </Stack.Navigator>
   );
 };
