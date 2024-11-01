@@ -12,33 +12,34 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 const { width } = Dimensions.get('screen');
 
-const Input = props => {
+const Input = ({ callback, label, value, isPassword }) => {
   const [isFocused, setIsFocused] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
-  const handleChangeText = value => {
-    props.callback(value);
+  const handleChangeText = (value) => {
+    callback(value);
   };
 
   return (
     <View style={s.container}>
-      <Text style={s.label}>{props.label}</Text>
+      <Text style={s.label}>{label}</Text>
       <View style={[s.inputContainer, isFocused && s.inputFocused]}>
         <TextInput
           style={s.input}
           keyboardType="email-address"
           autoCapitalize="none"
           selectionColor={uiColors.green.normal}
-          secureTextEntry={props.isPassword && !isVisible}
-          value={props.value}
+          secureTextEntry={isPassword && !isVisible}
+          value={value}
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
           onChangeText={handleChangeText}
         />
-        {props.isPassword && (
+        {isPassword && (
           <TouchableOpacity
             style={s.icon}
-            onPress={() => setIsVisible(!isVisible)}>
+            onPress={() => setIsVisible(!isVisible)}
+          >
             <Icon
               name={isVisible ? 'visibility' : 'visibility-off'}
               size={24}
