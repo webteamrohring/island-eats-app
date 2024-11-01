@@ -75,3 +75,8 @@ yarn-error.log
 
 # Other files
 .env
+
+# Prettier configuration
+.prettierrc
+.prettierrc.*
+.prettierignore
