@@ -29,7 +29,7 @@ const Input = props => {
           keyboardType="email-address"
           autoCapitalize="none"
           selectionColor={uiColors.green.normal}
-          secureTextEntry={!isVisible}
+          secureTextEntry={props.isPassword && !isVisible}
           value={props.value}
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
