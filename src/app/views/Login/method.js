@@ -4,10 +4,9 @@ import { useNavigation } from '@react-navigation/native';
 const useMethod = () => {
   const navigation = useNavigation();
   const [login, setLogin] = useState({ email: '', password: '' });
-  console.log('🚀 ~ useMethod ~ login:', login);
 
   const handleChange = (value, fieldName) => {
-    setLogin(prev => {
+    setLogin((prev) => {
       return { ...prev, [fieldName]: value };
     });
   };

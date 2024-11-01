@@ -1,17 +1,17 @@
-import React, {useReducer, useContext} from 'react';
-import {IslandDispatchContext, IslandContext} from './Context';
-import {userReducer, initialUser} from './reducer/UserReducer';
-import {themeReducer, initialTheme} from './reducer/ThemeReducer';
-import {DISPATCH_TYPE} from '@utils/constants/contextConstants';
+import React, { useReducer, useContext } from 'react';
+import { IslandDispatchContext, IslandContext } from './Context';
+import { userReducer, initialUser } from './reducer/UserReducer';
+import { themeReducer, initialTheme } from './reducer/ThemeReducer';
+import { DISPATCH_TYPE } from '@utils/constants/contextConstants';
 
-export function IslandProvider({children}) {
+export function IslandProvider({ children }) {
   const [userState, userDispatch] = useReducer(userReducer, initialUser);
   const [themeState, themeDispatch] = useReducer(themeReducer, initialTheme);
 
-  const {USER} = DISPATCH_TYPE;
+  const { USER, THEME } = DISPATCH_TYPE;
 
   const dispatch = (dispatchType, data, type = 'upsert') => {
-    const action = {type, data};
+    const action = { type, data };
     switch (dispatchType) {
       case USER:
         return userDispatch(action);
@@ -23,7 +23,7 @@ export function IslandProvider({children}) {
   };
 
   return (
-    <IslandContext.Provider value={{userState, themeState}}>
+    <IslandContext.Provider value={{ userState, themeState }}>
       <IslandDispatchContext.Provider value={dispatch}>
         {children}
       </IslandDispatchContext.Provider>
@@ -41,7 +41,7 @@ export function useIslandDispatch() {
 
 export async function dispatchUser(dispatch) {
   // const response = await getRequest('users');
-  if (response.ok) {
+  /*   if (response.ok) {
     dispatch('user', response.data.user);
-  }
+  } */
 }
