@@ -1,27 +1,8 @@
-import React from 'react';
 import { uiColors } from '@utils/colors';
+import React from 'react';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
-const Buttons = ({
-  text,
-  isDisabled = false,
-  callback = () => {},
-  backgroundColor = uiColors.green.normal,
-  disabledBackgroundColor = uiColors.white.darker,
-  textColor = uiColors.white.normal,
-  disabledTextColor = uiColors.white.normal,
-  fontSize = 18,
-  fontWeight = '500',
-  lineHeight = 22,
-  paddingVertical = 16,
-  paddingHorizontal = 16,
-  borderRadius = 8,
-  borderWidth = 0,
-  borderColor = 'transparent',
-  width = '100%',
-  style,
-  textStyle,
-}) => {
+const Buttons = ({ text, isDisabled = false, callback = () => { } }) => {
   const handlePress = () => {
     if (isDisabled) return;
     callback();
@@ -74,7 +55,7 @@ const s = StyleSheet.create({
     alignItems: 'center',
   },
   disabled: {
-    opacity: 0.1, // Reduce opacidad cuando está deshabilitado para mayor claridad
+    backgroundColor: uiColors.black.lightActive,
   },
   text: {
     textAlign: 'center',
