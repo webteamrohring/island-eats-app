@@ -78,7 +78,10 @@ const s = StyleSheet.create({
   },
   input: {
     width: '90%',
+    // padding: 10,
+    height: 40, // Adjust height as needed
     color: uiColors.white.normal,
+    textAlignVertical: 'center',
   },
   inputFocused: {
     borderColor: uiColors.green.normal,
