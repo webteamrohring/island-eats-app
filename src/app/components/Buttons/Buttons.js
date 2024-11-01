@@ -1,8 +1,8 @@
-import {uiColors} from '@utils/colors';
+import { uiColors } from '@utils/colors';
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
-const Buttons = ({text, isDisabled = false, callback = () => {}}) => {
+const Buttons = ({ text, isDisabled = false, callback = () => { } }) => {
   const handlePress = () => {
     callback();
   };
@@ -29,7 +29,7 @@ const s = StyleSheet.create({
     backgroundColor: uiColors.green.normal,
   },
   disabled: {
-    backgroundColor: uiColors.white.darker,
+    backgroundColor: uiColors.black.lightActive,
   },
   text: {
     fontSize: 18,
