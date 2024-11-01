@@ -5,12 +5,11 @@ import { Dimensions, Image, SafeAreaView, StyleSheet, Text, TouchableOpacity, Vi
 import Logo from '@assets/images/TransparentWhiteLogo.png';
 import Buttons from '@components/Buttons/Buttons';
 import useMethod from './method';
-import { isValidEmail } from '@utils/helpers';
 
 const { width } = Dimensions.get('screen');
 
 const ForgotPassword = () => {
-  const { login, handleChange, handleSendLink, navigation } = useMethod();
+  const { login, handleChange, handleSendLink, isButtonDisabled, navigation } = useMethod();
   return (
     <SafeAreaView style={s.container}>
       <View style={s.innerContainer}>
@@ -24,7 +23,7 @@ const ForgotPassword = () => {
           callback={value => handleChange(value, 'email')}
         />
         <Text style={s.text}>If this email is associated with an account, you will receive a reset link shortly.</Text>
-        <Buttons text="Send Reset Link" isDisabled={!isValidEmail(login.email)} callback={handleSendLink} />
+        <Buttons text="Send Reset Link" isDisabled={isButtonDisabled('sendResetLink')} callback={handleSendLink} />
         <TouchableOpacity activeOpacity={0.6} onPress={() => navigation.navigate('Login')}>
           <Text style={s.rememberedText}>Remembered your password?</Text>
         </TouchableOpacity>
