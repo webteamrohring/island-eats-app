@@ -18,7 +18,7 @@ import useMethod from './method';
 const { width } = Dimensions.get('screen');
 
 const ResetPassword = () => {
-  const { resetPassword, handleChangePassword, navigation } = useMethod();
+  const { resetPassword, handleChangePassword, comparePasswords } = useMethod();
 
   return (
     <SafeAreaView style={s.container}>
