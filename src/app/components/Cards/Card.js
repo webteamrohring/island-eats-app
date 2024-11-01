@@ -1,8 +1,9 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
-import {uiColors} from '@utils/colors';
+import { View, TouchableOpacity, StyleSheet } from 'react-native';
+import { uiColors } from '@utils/colors';
 
 const Card = ({
+  callback,
   children,
   backgroundColor = uiColors.black.semiDark,
   paddingTop = 15,
@@ -10,18 +11,26 @@ const Card = ({
   paddingBottom = 14,
   paddingLeft = 14,
   borderRadius = 18,
+  marginTop = 0,
+  marginBottom = 0,
+  gap = 0,
   justifyContent = 'space-between',
   alignItems = 'center',
   flexDirection = 'row',
   width = '100%',
   style,
 }) => {
+  const Container = callback ? TouchableOpacity : View;
+
   return (
-    <View
+    <Container
+      onPress={callback}
       style={[
         styles.card,
         {
           backgroundColor,
+          marginTop,
+          marginBottom,
           paddingTop,
           paddingRight,
           paddingBottom,
@@ -31,11 +40,13 @@ const Card = ({
           alignItems,
           flexDirection,
           width,
+          gap,
         },
         style,
-      ]}>
+      ]}
+    >
       {children}
-    </View>
+    </Container>
   );
 };
 
