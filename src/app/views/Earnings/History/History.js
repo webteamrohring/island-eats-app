@@ -1,7 +1,7 @@
 import React from 'react';
 import useMethod from './method';
 import Divider from '@components/Dividers/Dividers';
-import Buttons from '@components/Buttons/Buttons';
+import SmallButton from '@components/Buttons/SmallButton';
 import s from './styles';
 import { SafeAreaView, Text, View, FlatList } from 'react-native';
 import { data } from '../dummy';
@@ -14,16 +14,9 @@ const History = () => {
         <Text style={s.totalEarningsText}>Your Earnings</Text>
         <View style={s.totalEarningsContainer}>
           <Text style={s.totalEarningsNumber}>$ 1,300.23</Text>
-          <Buttons
+          <SmallButton
             text="Withdraw"
             callback={() => navigator.navigate('Withdraw')}
-            width="auto"
-            paddingHorizontal={16}
-            paddingVertical={9}
-            borderRadius={50}
-            fontSize={16}
-            fontWeight="500"
-            lineHeight={24}
           />
         </View>
       </View>
