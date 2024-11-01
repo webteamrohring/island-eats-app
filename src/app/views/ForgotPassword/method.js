@@ -21,12 +21,20 @@ const useMethod = () => {
     navigation.navigate('LinkSent');
   };
 
+  const comparePasswords = () => {
+    if (resetPassword.new === resetPassword.confirm) {
+      return true;
+    }
+    return false;
+  };
+
   return {
     login,
     resetPassword,
     handleSendLink,
     handleChange,
     handleChangePassword,
+    comparePasswords,
     navigation,
   };
 };
