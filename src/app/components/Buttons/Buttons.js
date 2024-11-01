@@ -4,15 +4,45 @@ import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 const Buttons = ({ text, isDisabled = false, callback = () => { } }) => {
   const handlePress = () => {
+    if (isDisabled) return;
     callback();
   };
+
   return (
     <TouchableOpacity
-      style={[s.container, isDisabled && s.disabled]}
+      style={[
+        s.container,
+        {
+          backgroundColor: isDisabled
+            ? disabledBackgroundColor
+            : backgroundColor,
+          paddingVertical,
+          paddingHorizontal,
+          borderRadius,
+          borderWidth,
+          borderColor,
+          width,
+        },
+        style,
+      ]}
       activeOpacity={0.6}
       disabled={isDisabled}
-      onPress={handlePress}>
-      <Text style={s.text}>{text}</Text>
+      onPress={handlePress}
+    >
+      <Text
+        style={[
+          s.text,
+          {
+            color: isDisabled ? disabledTextColor : textColor,
+            fontSize,
+            fontWeight,
+            lineHeight,
+          },
+          textStyle,
+        ]}
+      >
+        {text}
+      </Text>
     </TouchableOpacity>
   );
 };
@@ -21,20 +51,13 @@ export default Buttons;
 
 const s = StyleSheet.create({
   container: {
-    width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 16,
-    borderRadius: 8,
-    backgroundColor: uiColors.green.normal,
   },
   disabled: {
     backgroundColor: uiColors.black.lightActive,
   },
   text: {
-    fontSize: 18,
-    fontWeight: '500',
-    lineHeight: 22,
-    color: uiColors.white.normal,
+    textAlign: 'center',
   },
 });

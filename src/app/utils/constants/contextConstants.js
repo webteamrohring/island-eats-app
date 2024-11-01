@@ -1,5 +1,6 @@
 export const DISPATCH_TYPE = {
   USER: 'user',
+  THEME: 'theme',
 };
 
 export const THEME_ACTIONS = {

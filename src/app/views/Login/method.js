@@ -7,7 +7,7 @@ const useMethod = () => {
   const [login, setLogin] = useState({ email: '', password: '' });
 
   const handleChange = (value, fieldName) => {
-    setLogin(prev => {
+    setLogin((prev) => {
       return { ...prev, [fieldName]: value };
     });
   };
